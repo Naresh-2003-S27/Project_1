@@ -1,0 +1,1677 @@
+/* ===================================
+   GOOGLE FONT
+===================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:linear-gradient(135deg,#ffdde1,#c9d6ff);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:#fff;
+
+    transition:.5s;
+
+}
+
+/* ===========================
+ DARK MODE
+=========================== */
+
+body.dark{
+
+background:#111827;
+
+color:white;
+
+}
+
+body.dark .glass{
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+/* ===========================
+ SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff69b4;
+
+border-radius:10px;
+
+}
+
+/* ===========================
+ LOADER
+=========================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#111;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loader-content{
+
+text-align:center;
+
+}
+
+.loader-heart{
+
+font-size:70px;
+
+animation:heartbeat 1s infinite;
+
+}
+
+.loader-content h2{
+
+margin-top:20px;
+
+letter-spacing:2px;
+
+color:white;
+
+}
+
+@keyframes heartbeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+25%{
+
+transform:scale(1.15);
+
+}
+
+50%{
+
+transform:scale(.9);
+
+}
+
+75%{
+
+transform:scale(1.2);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===========================
+ GLASS CARD
+=========================== */
+
+.glass{
+
+width:90%;
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:40px;
+
+background:rgba(255,255,255,.18);
+
+border:1px solid rgba(255,255,255,.3);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+box-shadow:
+
+0 8px 32px rgba(0,0,0,.2);
+
+transition:.4s;
+
+}
+
+.glass:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+ HERO
+=========================== */
+
+.hero{
+
+text-align:center;
+
+margin-top:120px;
+
+}
+
+.hero h1{
+
+font-size:4rem;
+
+font-weight:700;
+
+color:white;
+
+}
+
+.hero h2{
+
+font-size:2.2rem;
+
+margin:20px 0;
+
+color:#ffe9a7;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin:30px auto;
+
+max-width:650px;
+
+}
+
+/* ===========================
+ BUTTONS
+=========================== */
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.hero-buttons button{
+
+padding:16px 35px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.4s;
+
+background:white;
+
+color:#ff4081;
+
+font-weight:600;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.hero-buttons button:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+}
+
+#musicBtn{
+
+background:#ff4081;
+
+color:white;
+
+}
+
+/* ===========================
+ THEME BUTTON
+=========================== */
+
+#themeToggle{
+
+position:fixed;
+
+top:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:22px;
+
+background:white;
+
+color:#ff4081;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+#themeToggle:hover{
+
+transform:rotate(180deg);
+
+}
+
+/* ===========================
+ COUNTDOWN
+=========================== */
+
+.countdown{
+
+text-align:center;
+
+}
+
+.countdown h2{
+
+margin-bottom:25px;
+
+font-size:32px;
+
+}
+
+#timer{
+
+font-size:2rem;
+
+font-weight:700;
+
+color:#fff8c6;
+
+}
+
+/* ===========================
+ RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:2.6rem;
+
+}
+
+.hero h2{
+
+font-size:1.6rem;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.glass{
+
+padding:25px;
+
+}
+
+}
+
+/* ==========================================
+   GIFT SECTION
+========================================== */
+
+.gift-section{
+    text-align:center;
+    margin:80px auto;
+}
+
+#giftBox{
+    width:170px;
+    height:170px;
+    margin:auto;
+    border-radius:25px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:90px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+    transition:.4s;
+}
+
+#giftBox:hover{
+
+    transform:scale(1.1) rotate(-8deg);
+
+}
+
+#giftBox.open{
+
+    animation:giftOpen .9s ease forwards;
+
+}
+
+@keyframes giftOpen{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.25) rotate(10deg);
+
+}
+
+100%{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+}
+
+.gift-section p{
+
+margin-top:20px;
+
+font-size:22px;
+
+font-weight:600;
+
+}
+
+/* ==========================================
+LETTER
+========================================== */
+
+.hidden{
+
+display:none;
+
+}
+
+#letter{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:.8s;
+
+}
+
+#letter.show{
+
+display:block;
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+#letter h2{
+
+text-align:center;
+
+margin-bottom:25px;
+
+font-size:34px;
+
+color:#fff5b1;
+
+}
+
+#typingText{
+
+font-size:20px;
+
+line-height:2;
+
+white-space:pre-wrap;
+
+}
+
+/* ==========================================
+PHOTO GALLERY
+========================================== */
+
+.gallery{
+
+text-align:center;
+
+}
+
+.gallery h2{
+
+font-size:34px;
+
+margin-bottom:35px;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.4s;
+
+cursor:pointer;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.07);
+
+}
+
+/* ==========================================
+TIMELINE
+========================================== */
+
+.timeline{
+
+position:relative;
+
+}
+
+.timeline h2{
+
+text-align:center;
+
+margin-bottom:45px;
+
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+top:90px;
+
+width:4px;
+
+height:calc(100% - 100px);
+
+background:white;
+
+transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+position:relative;
+
+width:45%;
+
+padding:20px;
+
+margin:25px 0;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+}
+
+.timeline-item span{
+
+font-size:28px;
+
+margin-right:10px;
+
+}
+
+.timeline-item:nth-child(even){
+
+margin-left:auto;
+
+}
+
+/* ==========================================
+REASONS
+========================================== */
+
+.reasons{
+
+list-style:none;
+
+margin-top:30px;
+
+}
+
+.reasons li{
+
+padding:18px;
+
+margin:15px 0;
+
+font-size:20px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.12);
+
+transition:.3s;
+
+}
+
+.reasons li:hover{
+
+transform:translateX(10px);
+
+}
+
+/* ==========================================
+SECRET BUTTON
+========================================== */
+
+#secretBtn{
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:#ff4081;
+
+color:white;
+
+font-size:18px;
+
+display:block;
+
+margin:20px auto;
+
+transition:.3s;
+
+}
+
+#secretBtn:hover{
+
+transform:scale(1.06);
+
+}
+
+#secretMessage{
+
+display:none;
+
+margin-top:30px;
+
+text-align:center;
+
+font-size:22px;
+
+line-height:1.8;
+
+animation:fadeUp .8s ease;
+
+}
+
+#secretMessage.show{
+
+display:block;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+footer{
+
+margin:80px 0 30px;
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+opacity:.85;
+
+}
+
+/* ==========================================
+CANVAS
+========================================== */
+
+#confetti,
+#fireworks{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+z-index:9999;
+
+}
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.timeline::before{
+
+left:25px;
+
+}
+
+.timeline-item{
+
+width:calc(100% - 55px);
+
+margin-left:55px !important;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-grid img{
+
+height:300px;
+
+}
+
+#giftBox{
+
+width:130px;
+
+height:130px;
+
+font-size:70px;
+
+}
+
+#typingText{
+
+font-size:18px;
+
+}
+
+.reasons li{
+
+font-size:18px;
+
+}
+
+}
+
+/* ==================================================
+   PART 3.1
+   FLOATING HEARTS, FLOWERS, SPARKLES
+================================================== */
+
+/* Containers */
+
+#floating-hearts,
+#flowers,
+#sparkles{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+/* Keep content above decorations */
+
+.hero,
+.glass,
+footer{
+    position:relative;
+    z-index:10;
+}
+
+/* Floating Hearts */
+
+.heart{
+
+    position:absolute;
+
+    bottom:-60px;
+
+    color:#ff4f9d;
+
+    font-size:26px;
+
+    animation:heartFloat linear forwards;
+
+    opacity:.8;
+
+    filter:drop-shadow(0 0 10px rgba(255,105,180,.4));
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:translateY(0) scale(.4) rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.4) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Flowers */
+
+.flower{
+
+position:absolute;
+
+bottom:-60px;
+
+font-size:28px;
+
+animation:flowerFloat linear forwards;
+
+opacity:.9;
+
+}
+
+@keyframes flowerFloat{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(540deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Sparkles */
+
+.sparkle{
+
+position:absolute;
+
+width:8px;
+
+height:8px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+
+0 0 8px white,
+
+0 0 15px white,
+
+0 0 25px white;
+
+animation:sparkleAnim 2.5s linear infinite;
+
+}
+
+@keyframes sparkleAnim{
+
+0%{
+
+transform:scale(.2);
+
+opacity:0;
+
+}
+
+50%{
+
+transform:scale(1.3);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(.2);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================================
+   Animated Background
+========================================== */
+
+body{
+
+background-size:400% 400%;
+
+animation:bgAnimation 15s ease infinite;
+
+}
+
+@keyframes bgAnimation{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* ==========================================
+   Hero Glow
+========================================== */
+
+.hero h1{
+
+text-shadow:
+
+0 0 20px rgba(255,255,255,.6),
+
+0 0 35px rgba(255,105,180,.4);
+
+}
+
+.hero h2{
+
+animation:glow 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 10px #fff;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 25px #fff,
+
+0 0 40px #ffd54f;
+
+}
+
+}
+
+/* ==========================================
+   Button Shine
+========================================== */
+
+.hero-buttons button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero-buttons button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:60%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.6),
+
+transparent
+
+);
+
+transform:skewX(-20deg);
+
+transition:.7s;
+
+}
+
+.hero-buttons button:hover::before{
+
+left:140%;
+
+}
+
+/* ==========================================
+   Card Animation
+========================================== */
+
+.glass{
+
+animation:fadeCard .9s ease;
+
+}
+
+@keyframes fadeCard{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   Image Hover Glow
+========================================== */
+
+.gallery-grid img:hover{
+
+box-shadow:
+
+0 0 30px rgba(255,255,255,.5),
+
+0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* =========================================================
+   PART 3.2
+   PREMIUM FINISHING EFFECTS
+========================================================= */
+
+/* ===============================
+   PHOTO LIGHTBOX
+================================ */
+
+#lightbox{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.92);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.4s;
+
+z-index:99999;
+
+}
+
+#lightbox.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:18px;
+
+box-shadow:
+
+0 20px 50px rgba(255,255,255,.15);
+
+animation:zoomImage .5s;
+
+}
+
+@keyframes zoomImage{
+
+from{
+
+transform:scale(.5);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+#lightbox span{
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+font-size:45px;
+
+cursor:pointer;
+
+color:white;
+
+}
+
+/* ===============================
+   FLOATING BUBBLES
+================================ */
+
+.bubble{
+
+position:absolute;
+
+bottom:-100px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(8px);
+
+animation:bubbleUp linear forwards;
+
+}
+
+@keyframes bubbleUp{
+
+0%{
+
+transform:translateY(0) scale(.3);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.3);
+
+opacity:0;
+
+}
+
+}
+
+/* ===============================
+   GIFT GLOW
+================================ */
+
+#giftBox{
+
+animation:giftGlow 2s infinite;
+
+}
+
+@keyframes giftGlow{
+
+0%{
+
+box-shadow:
+
+0 0 10px rgba(255,255,255,.2);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 40px rgba(255,215,0,.9),
+
+0 0 80px rgba(255,105,180,.5);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 10px rgba(255,255,255,.2);
+
+}
+
+}
+
+/* ===============================
+   TIMER EFFECT
+================================ */
+
+#timer{
+
+animation:pulseTimer 2s infinite;
+
+}
+
+@keyframes pulseTimer{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===============================
+   SECRET MESSAGE
+================================ */
+
+#secretMessage{
+
+background:rgba(255,255,255,.15);
+
+padding:30px;
+
+border-radius:20px;
+
+backdrop-filter:blur(12px);
+
+}
+
+/* ===============================
+   TIMELINE HOVER
+================================ */
+
+.timeline-item{
+
+transition:.4s;
+
+}
+
+.timeline-item:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+background:rgba(255,255,255,.18);
+
+}
+
+/* ===============================
+   REASONS HOVER
+================================ */
+
+.reasons li{
+
+cursor:pointer;
+
+}
+
+.reasons li:hover{
+
+background:rgba(255,255,255,.22);
+
+box-shadow:
+
+0 10px 25px rgba(255,255,255,.15);
+
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer{
+
+padding-bottom:30px;
+
+font-size:17px;
+
+text-shadow:0 0 10px rgba(255,255,255,.3);
+
+}
+
+/* ===============================
+   FADE ANIMATIONS
+================================ */
+
+.fadeUp{
+
+animation:fadeUpAnimation .8s ease forwards;
+
+}
+
+@keyframes fadeUpAnimation{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.zoomIn{
+
+animation:zoomIn .8s ease;
+
+}
+
+@keyframes zoomIn{
+
+from{
+
+opacity:0;
+
+transform:scale(.7);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===============================
+   GLASS SHINE
+================================ */
+
+.glass{
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.glass::after{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+
+left:-50%;
+
+width:60%;
+
+height:300%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.18),
+
+transparent
+
+);
+
+transform:rotate(25deg);
+
+animation:glassShine 9s infinite;
+
+}
+
+@keyframes glassShine{
+
+0%{
+
+left:-80%;
+
+}
+
+100%{
+
+left:180%;
+
+}
+
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media(max-width:768px){
+
+.hero{
+
+margin-top:70px;
+
+}
+
+.hero h1{
+
+font-size:2.3rem;
+
+}
+
+.hero h2{
+
+font-size:1.5rem;
+
+}
+
+.gallery-grid{
+
+gap:15px;
+
+}
+
+.gallery-grid img{
+
+height:250px;
+
+}
+
+#giftBox{
+
+width:120px;
+
+height:120px;
+
+font-size:60px;
+
+}
+
+#lightbox img{
+
+max-width:96%;
+
+}
+
+}
+
+/* ===============================
+   LANDSCAPE MOBILE
+================================ */
+
+@media(max-height:500px){
+
+.hero{
+
+margin-top:20px;
+
+}
+
+.glass{
+
+padding:20px;
+
+}
+
+}
