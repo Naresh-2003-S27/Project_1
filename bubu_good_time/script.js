@@ -161,8 +161,6 @@ function galleryPage() {
   return section(`
     <div class="eyebrow">PAGE 4</div>
     <h2>Our beautiful days 📸</h2>
-    <p class="muted">Put your photos in the <code>images</code> folder using the names
-    <b>memory1.jpg</b> through <b>memory5.jpg</b>. Change captions at the top of <code>script.js</code>.</p>
 
     <div class="gallery">
       ${memories.map((m, i) => `
