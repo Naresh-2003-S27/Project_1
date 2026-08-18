@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fff8f1">
+  <meta name="description" content="A tiny corner of the internet where everything is okay for a while. ❤️">
+  <title>Good Hours for Panni Kuttyyyy ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" id="ambient"></div>
+
+  <header class="topbar" id="topbar" hidden>
+    <button class="tiny-btn" id="musicBtn" aria-label="Optional music toggle">🔇</button>
+    <div class="progress"><span id="progressFill"></span></div>
+    <span class="page-count" id="pageCount">1/8</span>
+  </header>
+
+  <main id="app"></main>
+<audio id="bgMusic" loop>
+  <source src="audio/song.mp3" type="audio/mpeg">
+</audio>
+  <script src="script.js"></script>
+</body>
+</html>
